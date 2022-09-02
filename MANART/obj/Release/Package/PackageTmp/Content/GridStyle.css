@@ -1,0 +1,539 @@
+/* Search Grid */
+.grid
+{
+    font-size:10px;
+    font-family:Arial;
+    border:solid 1px #333;
+    background-color:#fff;
+    padding:1px;
+     
+}
+.grid .title
+{
+	background:#323A4B;
+	color:#fff;
+	height:30px;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	font-size:20px;	  
+	font-weight:normal;  
+}
+.grid .datatable
+{
+	width:100%;
+}
+.grid .datatable TH
+{
+
+	text-align: left;
+	height: 28px;
+	line-height: 17px;
+	padding: 0px 4px;
+	background-color:#70757A;
+	border-right: solid 1px #9e9e9e;
+	color: #333;
+
+}
+.grid .datatable TD
+{
+	color:#222;
+	text-align:left;
+	padding:2px 4px;
+	border-right:solid 1px #d9d9d9;
+}
+.grid .datatable TR.even { background-color:#fff; }
+.grid .datatable TR.odd { background-color:#f1f5fa; }      
+
+/* Sorting Styles */
+.grid .datatable TR TH.asc,
+.grid .datatable TR TH.desc
+{
+    background:url(../Images/hd_bg_sort.png) repeat-x;
+}
+.grid .datatable TH .sort { padding-right:21px; }
+.grid .datatable TH.asc .sort
+{
+    background:url(../Images/asc.gif) no-repeat center right;
+}
+.grid .datatable TH.desc .sort
+{
+    background:url(../Images/desc.gif) no-repeat center right;
+}
+
+/* Theme specific styles */
+.blue .grid .datatable TH
+{
+	background:url(../Images/blue_hd_bg.png) repeat-x;
+}
+.blue .grid .title
+{
+	background:#495265;
+}
+.gray .grid .datatable TH
+{
+	background:url(../Images/gray_hd_bg.png) repeat-x;
+}
+.gray .grid .title
+{
+	background:#323A4B;
+}
+
+
+
+.demo
+{
+	border-bottom:solid 1px #ccc;
+	font-size:18px;
+	height:23px;
+	padding:10px 0px 2px 0px;
+	margin-bottom:20px;
+}
+
+/* Normal grid Working */
+.GridTitle
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: Black;
+	margin-left: 10px;
+}
+.SearchGrid
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+
+.gridCol
+{
+	border-left: #d9d9d9 1px solid;
+	border-bottom: #d9d9d9 1px solid;
+	border-right: #d9d9d9 1px solid;
+}
+.gridTable
+{
+	width: 100%;
+}
+.gridHead
+{
+	background: url(../images/grid_head.gif) repeat-x;
+	height: 29px;
+	color: #08404c;
+}
+.gridTable td
+{
+	height: 25px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+.gridTable td.last
+{
+	height: 25px;
+	width: 30;
+	text-align: center;
+}
+
+
+.gridHead td
+{
+	padding: 5px;
+	padding-left: 10px;
+}
+.rowB
+{
+	background: #f5f5f5;
+}
+.gridBotBG
+{
+	background: url(../images/grid_botBG.gif) repeat-x;
+	height: 25px;
+	background-position: bottom;
+}
+.gridBotBG td
+{
+	padding-top: 5px;
+}
+.gridIconCol
+{
+	text-align: center;
+}
+
+.chartdata
+{
+	width: 100%;
+}
+.chartdata td
+{
+	padding-top: 10px;
+}
+
+.chartdata td.chartTD
+{
+	padding-left: 10px;
+}
+.chartText1
+{
+	color: #46a72c;
+}
+.chartText2
+{
+	color: #2c40bd;
+}
+.chartText3
+{
+	color: #b727a0;
+}
+.chartText4
+{
+	color: #fe2708;
+}
+.chartText5
+{
+	color: #d47d15;
+}
+.chartText6
+{
+	color: #b4ab14;
+}
+.GridViewStyle
+{
+	border-right: 2px solid #A7A6AA;
+	border-bottom: 2px solid #A7A6AA;
+	border-left: 2px solid white;
+	border-top: 2px solid white;
+	padding: 4px;
+}
+
+.GridViewStyle a
+{
+	color: #FFFFFF;
+}
+
+.GridViewHeaderStyle th
+{
+	text-align: left;
+	height: 38px;
+	line-height: 17px;
+	padding: 0px 4px;
+	background-color:#70757A;
+	border-right: solid 1px #9e9e9e;
+    color:white;
+	/*color: #333;*/
+}
+
+
+.GridViewHeaderStyle a:link {
+   color: #333;
+    text-decoration : none;
+}
+
+.GridViewHeaderStyle a:visited {
+    color: #333;
+    text-decoration : none;
+}
+
+.GridViewHeaderStyle a:hover {
+    color: #333;
+    text-decoration : underline;
+}
+
+.GridViewHeaderStyle a:active {
+    color: #333;
+    text-decoration : underline;
+}
+
+
+.GridViewHeaderStyle
+{
+   
+	background-color: #70757A;
+	
+	color: yellow;
+	text-align: left;
+	height:auto;
+
+}
+
+.GridViewFooterStyle th
+{    
+	font-weight: bold;	
+	text-align: left;	
+	line-height: 17px;
+	padding: 0px 6px;			
+	color: White;	
+	
+}
+.GridViewFooterStyle td
+{   
+	font-weight: bold;	
+	line-height: 17px;
+	height:auto;	
+	border-right: solid 1px #9e9e9e;
+}
+.GridViewRowStyle
+{
+	background-color: #D4D4D4;
+	color: #333333;
+	text-align: left;		
+}
+
+.GridViewAlternatingRowStyle
+{
+	background-color: #FFFFFF;
+	color: #284775;
+	text-align: left;		
+}
+
+.GridViewRowStyle td, .GridViewAlternatingRowStyle td
+{
+	color:#222;	
+	padding:2px 4px;
+	border-right:solid 1px #d9d9d9;
+}
+
+.GridViewSelectedRowStyle
+{
+	background-color: #E2DED6;
+	font-weight: bold;
+	color: #333333;
+}
+
+.GridViewPagerStyle
+{	
+	background-color: #70757A;
+}
+.GridViewPagerStyle td
+{
+	padding-left: 4px;
+	padding-right: 4px;
+	}
+
+.GridViewPagerStyle table /* to center the paging links*/
+{
+	margin: 0 auto 0 auto;
+}
+
+/* Css For Normal Grid Working */
+.NormalGrdBorder {
+	border: 1px solid #D9D9D9;
+}
+
+#NormalGridWithInnerBorder{
+	border-top: 1px solid #D9D9D9;
+	border-left: 1px solid #D9D9D9;
+}
+
+#NormalGridWithInnerBorder td {
+	border-right: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+}
+
+.NormalGridTopBGWithHeading {
+	background-image: url(../images/box_top.gif);
+	background-repeat: repeat-x;
+	height: 34px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #484747;
+	padding-left: 10px;
+    
+
+
+}
+.NormalGridcolumnsHeadingCenter{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 9pt;
+	text-decoration: none;
+	background-image: url(../images/Normal_Grid_Top_BG.jpg);
+	background-repeat: repeat-x;
+	height: 38px;
+	text-align: center;
+
+}
+
+.NormalGridcolumnsHeadingLeft{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 9pt;
+	text-decoration: none;
+	background-image: url(../images/Normal_Grid_Top_BG.jpg);
+	background-repeat: repeat-x;
+	height: 38px;
+	padding-left: 10px;
+}
+
+.NormalGridcolumnsHeadingRight{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 9pt;
+	text-decoration: none;
+	background-image: url(../images/Normal_Grid_Top_BG.jpg);
+	background-repeat: repeat-x;
+	height: 38px;
+	padding-right: 10px;
+
+}
+.NormalGridRowWithWhiteBG {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 8pt;
+	text-decoration: none;
+	height: 25px;
+	padding-left: 10px;
+	background-color: #FFFFFF;
+
+}
+.NormalGridRowWithColorBG {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 8pt;
+	text-decoration: none;
+	height: 25px;
+	padding-left: 10px;
+	background-color: #F2F2F2;
+}
+.NormalViewAll {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #484747;
+	text-decoration: none;
+	background-image: url(../images/GridBottomBG.gif);
+	background-repeat: repeat-x;
+	height: 34px;
+	text-align: right;
+	padding-right: 15px;
+
+
+}
+.NormalViewAll a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #484747;
+	text-decoration: none;
+	background-image: url(../images/GridBottomBG.gif);
+	background-repeat: repeat-x;
+	height: 34px;
+	text-align: right;
+	padding-right: 15px;
+	padding-top: 10px;
+
+}
+.NormalViewAll a:hover {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #2AA2CA;
+	text-decoration: none;
+	background-image: url(../images/GridBottomBG.gif);
+	background-repeat: repeat-x;
+	height: 34px;
+	text-align: right;
+	padding-right: 15px;
+}
+.NormalGridRowSelected 
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 8pt;
+	text-decoration: none;
+	height: 25px;
+	padding-left: 10px;
+	background-color: #666666;
+}
+
+.GridViewHeaderMyStyle
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-align: left;
+	font-weight: bold;
+	height: 38px;
+	line-height: 17px;
+	padding: 0px 4px;
+	background-color: #70757A;
+	
+	color: #333;
+}
+.GridViewHeaderMyStyle td
+{
+	border-right: solid 1px Black;	
+	border-bottom: solid 1px Black;		
+	padding-left: 5px;
+}
+.GridViewHeaderMyStyle th
+{
+	border-right: solid 1px Black;	
+	border-bottom: solid 1px Black;		
+	padding-left: 5px;
+}
+.GridViewHeaderStyle2
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-align: left;
+	font-weight: bold;
+	height: 38px;
+	line-height: 17px;
+	padding: 0px 4px;	
+	color: #333;	
+}
+.GridViewHeaderStyle2 td
+{
+	border-right: solid 1px Black;	
+	border-bottom: solid 1px Black;			
+	padding-left: 5px;
+}
+.GridViewHeaderStyle2 th
+{
+	border-right: solid 1px Black;	
+	border-bottom: solid 1px Black;			
+	padding-left: 5px;	
+}
+.GridViewHeaderStylePatch th
+{
+	text-align: left;
+	height: 38px;
+	line-height: 17px;
+	padding: 0px 4px;	
+	border-right: solid 1px #9e9e9e;
+	color: #CCCCCC;
+}
+
+
+.GridViewHeaderStylePatch a:link {
+   color: #333;
+    text-decoration : none;
+}
+
+.GridViewHeaderStylePatch a:visited {
+    color: #333;
+    text-decoration : none;
+}
+
+.GridViewHeaderStylePatch a:hover {
+    color: #333;
+    text-decoration : underline;
+}
+
+.GridViewHeaderStylePatch a:active {
+    color: #333;
+    text-decoration : underline;
+}
+
+
+.GridViewHeaderStylePatch
+{
+   
+	background-color: #CCCCCC;
+	font-weight: bold;
+	color: White;
+	text-align: left;
+	height:auto;
+
+}

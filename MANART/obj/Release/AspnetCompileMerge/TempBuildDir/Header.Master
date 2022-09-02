@@ -1,0 +1,329 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header.master.cs" Inherits="MANART.Header" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="~/WebParts/Location.ascx" TagName="Location" TagPrefix="uc1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MTI.... </title>
+    <!-- Le styles -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <%-- <link href="Content/bootstrap.css" rel="stylesheet" />--%>
+    <link href="Content/style.css" rel="stylesheet" />
+    <%-- <script src="Scripts/jquery-1.3.2.js"></script>--%>
+    <%--   <link href="Content/bootstrap.css" rel="stylesheet" />--%>
+    <%--<script src="Scripts/jquery-1.10.2.js"></script>--%>
+    <%--<link href="Content/font-awesome.min.css" rel="stylesheet" type="text/css" />--%>
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>--%>
+    <%-- <script src="Scripts/bootstrap.min.js"></script>--%>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <script src="Scripts/jquery-latest.pack.js"></script>
+    <script src="Scripts/jcarousellite_1.0.1c4.js"></script>
+    <script src="Scripts/jquery.corner.js"></script>
+    <script src="Scripts/jquery.li-scroller.1.0.js"></script>
+    <script src="Scripts/jquery-1.11.1.js"></script>
+    <%--<style type="text/css">
+        .newStyle1 {
+            background-image: url(Images/LeftMenu_menuOnBGTop.gif) no-repeat;
+            height: 36px;
+        }
+
+        .newStyle2 {
+            width: 400px;
+        }
+    </style>--%>
+    <script type="text/javascript">
+        if (document.getElementById) {
+            // IE 5 and up, FF  
+            var upLevel = true;
+        } else if (document.layers) {
+            // Netscape 4   
+            var ns4 = true;
+        } else if (document.all) {
+            //IE 4   
+            var ie4 = true;
+        }
+        function showObject(obj) {
+            if (ns4) { obj.visibility = "show"; }
+            else if (ie4 || upLevel) {
+                drawMessageBox();
+                //obj.style.visibility = "visible";background-color: #FFFFFF;
+            }
+        }
+        showObject('splashScreen');
+        function hideObject(obj) {
+            if (ns4) {
+                obj.visibility = "hide";
+            }
+            if (ie4 || upLevel)
+            { obj.style.visibility = "hidden"; }
+        }
+        function drawMessageBox() {
+           
+            var box = '<div id="splashScreen" style="position: absolute; z-index: 5; top: 30%; left: 35%;  font-family: Verdana">'
+           + '<table cellpadding="0" cellspacing="0" style="width:300px">'
+              + '<tr><td style="width:100%; height:100%;font-family:Tahoma;" align="center" valign="middle">'
+                     + '<br/><br />' + '<asp:Image ID="LoadImg" ImageUrl="~/Content/InProgress.gif" runat="server" /><br />'
+                                         + '<span style="font-family: Verdana; font-size: 15px; font-weight: bold;">Please wait...</span>'
+                                         + '</td><td></td></tr>'
+                                     + '</table>'
+                                        + '</div>';
+
+            document.write(box);
+        }
+
+    </script>
+    <script type="text/javascript">
+        document.onmousedown = disableclick;
+        function disableclick(e) {
+            var message = "Sorry, Right Click is disabled.";
+            if (event.button == 2) {
+                // event.returnValue = false;
+                alert(message);
+                return false;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(-1); }
+        setTimeout("preventBack()", 10);
+        window.onunload = function () { null };
+    </script>
+    <%--<link rel="stylesheet" href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css'
+        media="screen" />
+    <script type="text/javascript" src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js'></script>--%>
+    <script type="text/javascript">
+        //Disable the default MouseOver functionality of ASP.Net Menu control.
+        Sys.WebForms.Menu._elementObjectMapper.getMappedObject = function () {
+            return false;
+        };
+        $(function () {
+            //Remove the style attributes.
+            $(".navbar-nav li, .navbar-nav a, .navbar-nav ul").removeAttr('style');
+
+            //Apply the Bootstrap class to the Submenu.
+            $(".dropdown-menu").closest("li").removeClass().addClass("dropdown-toggle");
+
+            //Apply the Bootstrap properties to the Submenu.
+            $(".dropdown-toggle").find("a").eq(0).attr("data-toggle", "dropdown").attr("aria-haspopup", "true").attr("aria-expanded", "false").append("<span class='caret'></span>");
+
+            //Apply the Bootstrap "active" class to the selected Menu item.
+            $("a.selected").closest("li").addClass("active");
+            $("a.selected").closest(".dropdown-toggle").addClass("active");
+            //For Arrow
+            //$(".dropdown-menu").parent().removeClass().addClass('dropdown');
+            //$(".dropdown>a").removeClass().addClass('dropdown-toggle').append('<b class="caret"></b>').attr('data-toggle', 'dropdown');
+
+        });
+    </script>
+    <script type="text/javascript">
+        window.onkeydown = function (event) {
+            if (event.keyCode == 8 || event.keyCode == 116) {
+                if (event.preventDefault)
+                    event.preventDefault();
+                event.keyCode = 0;
+                event.returnValue = false
+                return false;
+            };
+            return true;
+        }
+    </script>
+    <style>
+        .Padding {
+            padding-left: 45px;
+
+        }
+        #loader {  
+    position: fixed;  
+    left: 0px;  
+    top: 0px;  
+    width: 100%;  
+    height: 100%;  
+    z-index: 9999;  
+    background: url('pageloader.gif') 50% 50% no-repeat rgb(249,249,249);  
+}  
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script> 
+
+<script type="text/javascript">
+    $(window).load(function () {
+   
+        //$("#loader").fadeOut(1000);
+    });
+</script>  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onkeydown="return (event.keyCode!=13)">
+    <%  Response.Flush();%>
+    <form id="form1" runat="server">
+      <%--    <% System.Threading.Thread.Sleep(3000);%>--%>
+        <%--  <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePageMethods="true" ScriptMode="Release">
+            <Scripts>--%>
+        <%--<asp:ScriptReference Path="~/Scripts/jquery-1.4.2.min.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery.datepick.js" />--%>
+        <%-- </Scripts>
+        </cc1:ToolkitScriptManager>--%>
+        <%--<asp:Image ImageUrl="~/Content/InProgress.gif" />--%>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" ScriptMode="Release">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/jquery-1.4.2.min.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery.datepick.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <!--New Code from Transactiom -->
+        <header class="Topheader">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <%--<img src="Images/logo.png" alt="Logo" title="Logo" /> height="55px;" width="135px;" --%>
+                        <%--<img src="Images/dcan_logo.jpg" alt="dcan_logo" title="dCAN"  />--%>
+                        <%--<img src="Images/dcan_logo1.png" />--%>
+                        <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/dcan_logo1.png" />
+                    </a>
+                </div>
+                <span class="siteTitle">MAN</span>
+                <span class="siteTitle">Trucks <span class="stspan"></span>India</span>
+                <div class="siteName">
+                  dCAN
+                </div >
+                
+                <div class="site-title hidden-xs " style=" margin-top: -25px;">
+                   <%--MAN Toll free 24x7 Customer support -180030702424--%> 
+                    <%--<img src="Images/logo.png" alt="Logo" title="Logo" />--%>
+                    <asp:Image ID="imgMan" runat="server" ImageUrl="~/Images/logo.png" />
+                    <%--dCAN Helpdesk Email: dCAN.Helpdesk@in.man.eu--%>
+                </div>
+                <div class="siteTitle_right"  >
+                     dCAN Helpdesk Email: dCAN.Helpdesk@in.man.eu
+                    <br />
+                     dCAN Phone numbers : +91 20 6645 2924 / 2948 (08:30 to 18:00 Hours on working days)
+                    <%--dCAN Toll free 24x7 Customer support -1800 266 6599--%> 
+                    <%--dCAN Toll free number : 1800 266 6599 (08:30 to 18:00 Hours on working days)--%>
+                </div>
+            </div>
+        </header>
+        <!-- Start Section-->
+        <section>
+            <div class="container" style="height: 52px">
+                <div class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <%--<a class="navbar-brand " CssClass="Padding" href="#">--%>
+                            <%--MENU--%>
+                            <%--</a>--%>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <div class="nav navbar-nav navbar-left">
+                                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" RenderingMode="List" CssClass="Padding"
+                                    IncludeStyleBlock="false" StaticMenuStyle-CssClass="nav navbar-nav" DynamicMenuStyle-CssClass="dropdown-menu">
+                                </asp:Menu>
+                            </div>
+                            <div class="nav navbar-nav navbar-right">
+                                <div class="nav navbar-nav navbar-left">
+                                    <%--<span class="glyphicon glyphicon-user"></span>--%> <%= @Session["lblUserName"] %>
+                                </div>
+                                <div class="nav navbar-nav navbar-right">
+                                    <asp:ImageButton ID="ImageButton1" OnClick="lnkLogOut_Click" runat="server" ImageUrl="images/LogOutIcon.png" CssClass="img-responsive"
+                                        ToolTip="LogOut" />
+                                </div>
+                            </div>
+                            <%--<li><a href="#"><span class="glyphicon glyphicon-cog"></span>SignUp</a></li>--%>
+                            <asp:Label ID="lblUserName" runat="server" Visible="false" Text="" Font-Size="Small"></asp:Label>
+                            <%--</ul>--%>
+                            <%--<div class="nav navbar-nav navbar-right">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                                        <span class="glyphicon glyphicon-user"></span><%= @Session["lblUserName"] %>  <span class="caret"></span>
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <asp:Label ID="lblUserName" runat="server" Text="" Font-Size="Small"></asp:Label><span class="caret"></span>
+                                    </button>
+                                    <!-- dropdown menu items-->
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#"><span class="glyphicon glyphicon-pencil"></span>Edit profile</a></li>
+                                        <li><span class="glyphicon glyphicon-cog"></span>
+                                            <asp:ImageButton ID="ImageButton1" OnClick="lnkLogOut_Click" runat="server" ImageUrl="images/LogOutIcon.png"
+                                                ToolTip="LogOut" />Log out</li>
+                                    </ul>
+                                </div>
+                            </div>--%>
+                        </div>
+                    </div>
+                    <!--End COntainer-fluid-->
+                </div>
+            </div>
+            <!-- Start Bulletin-->
+            <div class="container">
+                <div class="Bulletin">
+                    <span class="bg-black">Bulletin</span>
+                    <span>
+                        <%--<marquee>Welcome to MAN Trucks India.</marquee>--%>
+                        <%--<marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">--%>
+                        <marquee onmouseover="this.setAttribute('scrollamount', 0, 0);" onmouseout="this.setAttribute('scrollamount', 3, 0);" scrollamount="3">
+                            <asp:PlaceHolder ID="plhTag" runat ="server" ></asp:PlaceHolder>                                                       
+                            <a href="~/Forms/Admin/frmChangePassword.aspx" id="achPassword" runat ="server" ><span style="color:Red;font-weight:bold ">Your Password will be expired within <asp:Label ID="lblPasswordExp" runat ="server" ></asp:Label> days ...</span></a>	
+  <span id="sp1" runat="server" style="color:Red;font-weight:bold "><asp:Label ID="lblSiteMt" runat ="server"  Text="" ></asp:Label></span></marquee>
+
+                    </span>
+                </div>
+            </div>
+            <!-- End Bulletin-->
+            <%--<div id="loader"></div>--%>  
+            <!-- Start ContentPlaceHolder Here-->
+            <div class="container">
+                <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- End ContentPlaceHolder-->
+
+        </section>
+        <!-- End Section-->
+        <!--Start Footer  -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>A member of the MAN Group  </p>
+                    </div>
+                    <div class="col-md-6  ">
+                        <p class="text-right ">&copy; Copyright 2013 MAN Trucks India. All Rights Reserved </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--End Footer  -->
+    </form>
+    <% Response.Flush();%>
+    <script type="text/javascript">
+        if (upLevel) {
+        
+            var splash = document.getElementById("splashScreen");
+        }
+        else if 
+                                (ns4) {
+            var splash = document.splashScreen;
+        }
+        else if (ie4) {
+            var splash = document.all.splashScreen;
+        }
+        hideObject(splash);
+    </script>
+</body>
+</html>

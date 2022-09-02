@@ -1,0 +1,898 @@
+body
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: url(images/page_bg.gif);
+    margin: 5px auto;
+    font-size: 9px;
+}
+Table
+{
+    border-collapse: collapse;
+}
+
+td
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: 0px;
+    vertical-align: top;
+}
+
+th
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#TollNumber
+{
+    width: 60%;
+    border-collapse: collapse;
+}
+#TollNumber td
+{
+    color: #FFFFFF;
+    font-size: 10px;
+    text-align: right;
+}
+#GrayArea
+{
+    width: 1250px;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+#GrayArea td.grayWorkArea
+{
+    background: #efefef;
+    padding: 0px;
+}
+#GrayArea td.width5px
+{
+    background: #efefef;
+    width: 5px;
+    padding: 0px;
+}
+p
+{
+    padding: 0px;
+}
+#Logo_eicher
+{
+    margin-top: 5px;
+    padding-right: 5px;
+    width: 100%;
+    background: #efefef;
+}
+#Logo_eicher td
+{
+    padding-left: 5px;
+}
+#Logo_eicher td.applogo
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7e7e7e;
+    font-size: 18px;
+    font-weight: 900;
+    vertical-align: middle;
+    background: #efefef;
+}
+#Logo_eicher td.orglogo
+{
+    text-align: right;
+    padding-right: 5px;
+    background: #efefef;
+}
+
+
+#menuBar
+{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    height: 23px;
+    background: url(images/bg_menu.gif) repeat-x;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+#menuBar001
+{
+    margin-top: 0px;
+    border-collapse: collapse;
+}
+#menuBar td.menuBG
+{
+    background: url(images/bg_menu.gif) repeat-x;
+    height: 30px;
+}
+#menuBar td.sprtr
+{
+    width: 1px;
+}
+
+#TableMain
+{
+    width: 96%;
+    margin: 10px 5px;
+   
+}
+#TableMain td.WelcomeTD
+{
+    background: url(images/main_image.jpg);
+    height: 159px;
+    width: 70%;
+  
+}
+#TableMain td.WelcomeTD table
+{
+    width: 70%;
+}
+
+#TableMain td.WelcomeTD td
+{
+    color: #f5f5f5;
+    font-size: 11px;
+    padding: 9px;
+}
+#TableMain td.WelcomeTD td.heading
+{
+    font-size: 14px;
+    font-weight: 900;
+    padding-top: 8px;
+}
+#TableMain td.WelcomeTD .readLink
+{
+    text-align: right;
+    font-size : 9px;
+}
+.whiteLInk
+{
+    color: #f5f5f5;
+    font-size: 9px;
+    text-decoration: underline;
+    font-family :Arial ;
+}
+.whiteLInk:hover
+{
+    color: #f5f5f5;
+    font-size: 11px;
+    text-decoration: none;
+}
+form
+{
+    padding: 0px;
+    margin: 0px;
+}
+#loginTD
+{
+    padding-left: 10px;
+    color: #f5f5f5;
+    font-size: 11px;
+}
+
+#loginTD table.login
+{
+    width: 98%;
+    height: 159px;
+    background: url(images/bg_login.gif) no-repeat;
+}
+#loginTD table.login .login01
+{
+    margin-left: 10px;
+}
+#loginTD table.login .login01 td.heading
+{
+    font-size: 14px;
+    font-weight: 900;
+    color: #f5f5f5;
+    padding-top: 8px;
+    font-family :Arial;
+}
+
+
+#loginTD table.login .login01 td
+{
+    padding-top: 5px;
+}
+#loginTD table.login .login01 td.label
+{
+    padding-right: 5px;
+    font-size :9px;
+    font-family :Arial ;
+}
+.TextBoxForString
+{
+    width: 140px;
+}
+#TableMain002
+{
+    width: 100%;
+    margin: 0;
+}
+.tdLabel
+{
+    font-family: Arial;
+    font-size: 9px;
+    color: Black;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+#bulletinBoard
+{
+    background: url(images/bg_bulletin.gif) no-repeat;
+    width: 232px;
+    height: 295px;
+    margin-top: 10px;
+}
+
+#bulletinBoard .heading
+{
+    font-size: 16px;
+    font-weight: 900;
+}
+#bulletinBoard td
+{
+    padding-left: 9px;
+    padding-top: 8px;
+}
+#product
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#product .product01
+{
+    background: url(images/MANTruck.jpg) no-repeat;
+    width: 32%;
+    height: 247px;
+    border:1;
+}
+#product .product02
+{
+    background: url(images/MANTruck2.jpg) no-repeat;
+   width: 32%;
+    height: 247px;
+}
+#product .product03
+{
+    background: url(images/MANTruck1.jpg) no-repeat;
+    width: 32%;
+    height: 247px;
+}
+
+#product .productHeading
+{
+    padding-left: 4px;
+    padding-top: 7px;
+    font-size: 12px;
+    color: #f5f5f5;
+    font-weight: 900;
+    font-family :Arial;
+}
+
+#product #description
+{
+    margin-top: 92px;
+    font-family :Arial;
+    font-size :9px;
+}
+
+#description td
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#description .heading
+{
+    color: #4b1f00;
+}
+.normalLink
+{
+    color: #0000ff;
+    font-size :9px;
+    font-family :Arial;
+}
+.normalLink:hover
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+
+#ticker
+{
+    width: 100%;
+    margin-top: 10px;
+    height: 45px;
+}
+#ticker td
+{
+    vertical-align: middle;
+}
+#ticker .heading
+{
+    background: url(images/bg_ticker.gif) no-repeat;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+}
+#ticker .whiteBg
+{
+    background: url(images/bg_tickerWhite.gif) repeat-x;
+    height: 40px;
+    color: #000000;
+    font-size: 11px;
+    padding-left: 10px;
+}
+#ticker .lastTD
+{
+    padding: 0px;
+}
+#ticker .content
+{
+    width: 100%;
+}
+#footer
+{
+    width: 94%;
+    border-collapse: collapse;
+    margin: auto;
+}
+#footer td
+{
+    padding: 0px;
+    background-color: #FFFFFF;
+    vertical-align: middle;
+}
+#footer td.lasttd
+{
+    text-align: right;
+}
+
+.breadcrumb
+{
+    color: #888686;
+    border-bottom: 1px dotted #888686;
+    width: 100%;
+    margin: 10px 5px;
+}
+.breadcrumb td
+{
+    padding-bottom: 10px;
+}
+.breadcrumblink
+{
+    color: #888686;
+}
+.breadcrumb .arrow
+{
+    color: #888686;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+.breadcrumblink:hover
+{
+    text-decoration: none;
+}
+
+#workTable
+{
+    width: 100%;
+    margin: auto 5px;
+}
+.pagetilte
+{
+    color: #484747;
+    font-size: 18px;
+}
+.labelGray
+{
+    color: #727272;
+}
+#search
+{
+    width: 559px;
+    margin: auto;
+}
+#search .bgwhite
+{
+    background: url(images/search_mid.gif) repeat-x;
+    height: 40px;
+    padding-top: 8px;
+}
+#search .bgwhite td
+{
+    padding-left: 10px;
+    vertical-align: middle;
+}
+.linkblue
+{
+    color: #0b4da3;
+}
+.linkblue:hover
+{
+    text-decoration: none;
+}
+.fieldwidth
+{
+    width: 130px;
+}
+#workAreaBG
+{
+    background: #ffffff;
+    width: 784px;
+    padding: 5px;
+}
+.freeCell
+{
+    padding: 0px;
+    padding-left: 10px;
+}
+.workAreaTop
+{
+    background: url(images/workare_Top.gif) repeat-x;
+}
+.workAreabot
+{
+    background: url(images/workare_bot.gif) repeat-x;
+    background-position: bottom;
+    width: 784px;
+}
+.workAreaRight
+{
+    background: url(images/workare_Right.gif) repeat-y;
+}
+
+.boxTop
+{
+    width: 377px;
+    background: url(images/box_top.gif) repeat-x;
+    height: 34px;
+    border: #d9d9d9 1px solid;
+}
+.boxTop td
+{
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.boxTitle
+{
+    color: #484747;
+    font-size: 17px;
+    width: 100%;
+}
+.boxTitle .icon
+{
+    padding: 0px;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 35px;
+}
+
+.tableReport
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.boxTopReport
+{
+    background: url(images/box_top.gif) repeat-x;
+    height: 34px;
+    border: #d9d9d9 1px solid;
+}
+
+.boxTopReport td
+{
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.txtSearhInput
+{
+    color: #727272;
+    font-style: italic;
+    font-size: 10px;
+    width: 110px;
+}
+.gridCol
+{
+    border-left: #d9d9d9 1px solid;
+    border-bottom: #d9d9d9 1px solid;
+    border-right: #d9d9d9 1px solid;
+}
+.gridTable
+{
+    width: 100%;
+}
+.gridHead
+{
+    background: url(images/grid_head.gif) repeat-x;
+    height: 29px;
+    color: #08404c;
+}
+.gridTable td
+{
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.gridTable td.last
+{
+    height: 25px;
+    width: 30;
+    text-align: center;
+}
+
+
+.gridHead td
+{
+    padding: 5px;
+    padding-left: 10px;
+}
+.rowB
+{
+    background: #f5f5f5;
+}
+.gridBotBG
+{
+    background: url(images/grid_botBG.gif) repeat-x;
+    height: 25px;
+    background-position: bottom;
+}
+.gridBotBG td
+{
+    padding-top: 5px;
+}
+.gridIconCol
+{
+    text-align: center;
+}
+
+.chartdata
+{
+    width: 100%;
+}
+.chartdata td
+{
+    padding-top: 10px;
+}
+
+.chartdata td.chartTD
+{
+    padding-left: 10px;
+}
+.chartText1
+{
+    color: #46a72c;
+}
+.chartText2
+{
+    color: #2c40bd;
+}
+.chartText3
+{
+    color: #b727a0;
+}
+.chartText4
+{
+    color: #fe2708;
+}
+.chartText5
+{
+    color: #d47d15;
+}
+.chartText6
+{
+    color: #b4ab14;
+}
+.botRedBar
+{
+    background: url(images/bg_BotRedbard.gif) repeat-x;
+    height: 5px;
+}
+#newsticker-demo
+{
+    width: 226px;
+    height: 365px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #414141;
+    padding: 5px 5px 0;
+    font-family: Verdana,Arial,Sans-Serif;
+    font-size: 12px;
+}
+
+#newsticker-demo a
+{
+    text-decoration: none;
+}
+#newsticker-demo img
+{
+    border: 2px solid #FFFFFF;
+}
+
+#newsticker-demo .title
+{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    background: url(images/grid_head.gif) repeat-x;
+    height: 20px;
+    color: #08404c;
+}
+
+
+.newsticker-jcarousellite
+{
+    width: 100%;
+	height: 307px;
+}
+.newsticker-jcarousellite ul li
+{
+    list-style: none;
+    display: block;
+    padding-bottom: 1px;
+    margin-bottom: 5px;
+}
+.newsticker-jcarousellite .thumbnail
+{
+    float: left;
+    width: 100%;
+}
+.newsticker-jcarousellite .info
+{
+    width: 100%;
+    text-align: left;
+    font-family :Arial ;
+    font-size :9px;
+}
+.newsticker-jcarousellite .info span.cat
+{
+    display: block;
+    font-size: 12px;
+    color: #808080;
+}
+.newsticker-jcarousellite .info span.more
+{
+    display: block;
+    font-size: 12px;
+    text-align: right;
+}
+
+.clear
+{
+    clear: both;
+}
+
+
+.DivScroll
+{
+    height: 450px;
+    width: 210px;
+    overflow: scroll;
+    border: solid gray 1px;
+    padding: 0.2em 0.2em;
+}
+/* liScroll styles */
+
+.tickercontainer
+{
+    /* the outer div with the black border */
+    background: #333;
+    width: 100%;
+    height: 27px;
+    margin: 0;
+    padding: 0 overflow: hidden;
+}
+.tickercontainer .mask
+{
+    /* that serves as a mask. so you get a sort of padding both left and right */
+    position: relative;
+    top: 8px;
+    width: 100%;
+    overflow: hidden;
+}
+ul.newsticker
+{
+    /* that's your list */
+    position: relative;
+    left: 750px;
+    font: bold 10px Verdana;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.newsticker li
+{
+    float: left; /* important: display inline gives incorrect results when you check for elem's width */
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+ul.newsticker a
+{
+    white-space: nowrap;
+    padding: 0;
+    color: #3A85B0;
+    font: 8px Verdana;
+    margin: 0 50px 0 0;
+}
+ul.newsticker span
+{
+    margin: 0 10px 0 0;
+}
+
+
+
+/* 26052010 add Menu Css Class*/
+/* Start*/
+.staticMenuItemStyle
+{
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 4px;
+    margin-left: 0px;
+    height: 28px;
+    background-color: Transparent;
+    width: 140px;
+}
+
+.SubstaticMenuItemStyle
+{
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin-left: 0px;
+    height: 20px;
+    background-color: Transparent;
+    width: 120px;
+}
+
+.staticMenuItemSelectedStyle
+{
+    background: url(images/menu_Selectd.gif);
+}
+
+.staticHoverStyle
+{
+    background: url("menu_Selectd.gif");
+
+}
+
+.menuItem
+{
+    background: url(images/menu_Selectd.gif);
+}
+
+.dynamicMenuItemStyle
+{
+	border: solid 1px none;
+    background: url(images/Sub_menu_Selectd.gif) repeat-x;
+    width: 150px;      
+    height: 24px;
+    padding-left:3px; 
+    vertical-align:bottom;
+    text-decoration: none;    
+}
+
+
+.dynamicMenuItemStyle a:link {
+    color : white;
+    text-decoration : none;
+}
+
+.dynamicMenuItemStyle a:visited {
+    color : white;
+    text-decoration : none;
+}
+
+.dynamicMenuItemStyle a:hover {
+    color : white;
+    text-decoration : underline;
+}
+
+.dynamicMenuItemStyle a:active {
+    color : white;
+    text-decoration : underline;
+}
+
+.background
+{
+    border: solid 1px #000;
+    background: url(images/menu_normal1.gif) repeat-x;
+   
+}
+
+.tblbackground
+{
+    background: url(images/menu_normal1.gif) repeat-x;
+}
+
+.menuItemMouseOver, .menuItemSelected
+{
+    border: solid 1px none;
+    background: url(images/Sub_menu_Selectd.gif) repeat-x;
+    width: 150px;
+}
+
+.NavigationMenu A:link, .NavigationMenu A:visited, .NavigationMenu A:active
+{
+    text-decoration: none;
+    color: White;
+    display: block;
+}
+.NavigationMenu
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #FFF;
+    font-weight: 300;
+    background-color: Transparent;
+}
+
+.NavigationMenu A:link, .NavigationMenu A:visited, .NavigationMenu A:active
+{
+    text-decoration: none;
+    color: White;
+    display: block;
+}
+.NavigationMenu
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #FFF;
+    font-weight: 300;
+    background-color: Transparent;
+}
+
+
+
+.SubNavigationMenu A:link, .SubNavigationMenu A:visited, .SubNavigationMenu A:active
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align :left;
+    background: url(images/Sub_menu_Selectd.gif) repeat-x;
+    width :120px;
+}
+.SubNavigationMenu
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    color: black;
+    font-weight: 300;
+    background-color: Transparent;
+}
+
+.SubNavigationMenu A:link, .SubNavigationMenu A:visited, .SubNavigationMenu A:active
+{
+    text-decoration: none;
+    color: White;
+    display: block;
+}
+.DivMenu
+{
+    margin-left: 1px;
+  
+}
+.staticMenuItemStyleAdmin
+{
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 8px;
+    margin-left: 0px;
+    height: 28px;
+    background-color: Transparent;
+    width: 140px;
+}
+/* End*/

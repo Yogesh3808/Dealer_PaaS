@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{465BC1C8-90D7-4F5A-A41E-F93D00F5802D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MANART_BAL</RootNamespace>
+    <AssemblyName>MANART_BAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath />
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>D:\DLL Folder\AjaxControlToolkit.Binary.NET4\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ASPnetPagerV2_8">
+      <HintPath>D:\DLL Folder\ASPnetPagerV2_8.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.4.0.5\lib\net20\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.Common\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WebForms\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity.cs" />
+    <Compile Include="AESEncrytDecry.cs" />
+    <Compile Include="Alert.cs" />
+    <Compile Include="BrowserCompatibility.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="clsActivityHeads.cs" />
+    <Compile Include="clsAlert.cs" />
+    <Compile Include="clsBankStateMent.cs" />
+    <Compile Include="clsCaptcha.cs" />
+    <Compile Include="clsChassis.cs" />
+    <Compile Include="clsCompanyMaster.cs" />
+    <Compile Include="clsCompetitorTonnageWise.cs" />
+    <Compile Include="clsCompress.cs" />
+    <Compile Include="clsContent.cs" />
+    <Compile Include="clsControl.cs" />
+    <Compile Include="clsCouponClaim.cs" />
+    <Compile Include="clsCRM.cs" />
+    <Compile Include="clsCrypto.cs" />
+    <Compile Include="clsCustomer.cs" />
+    <Compile Include="clsDA.cs" />
+    <Compile Include="clsDAProcess.cs" />
+    <Compile Include="clsDealer.cs" />
+    <Compile Include="clsDealerTarget.cs" />
+    <Compile Include="clsDealerTargetValues.cs" />
+    <Compile Include="clsDealerUtility.cs" />
+    <Compile Include="clsDocument.cs" />
+    <Compile Include="clsEGPCustomer.cs" />
+    <Compile Include="clsEGPDealer.cs" />
+    <Compile Include="clsEGPLubricant.cs" />
+    <Compile Include="clsEGPopeningBal.cs" />
+    <Compile Include="clsEGPSparesInvoice.cs" />
+    <Compile Include="clsEGPSparesOA.cs" />
+    <Compile Include="clsEGPSupplier.cs" />
+    <Compile Include="clsEOY.cs" />
+    <Compile Include="clsEstimate.cs" />
+    <Compile Include="clsExcel.cs" />
+    <Compile Include="clsFMSCategory.cs" />
+    <Compile Include="ClsFPDA.cs" />
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="clsHDTrialAllocation.cs" />
+    <Compile Include="clsHDTrialHealthCheck.cs" />
+    <Compile Include="clsHDTrialReport.cs" />
+    <Compile Include="clsHDTrialReq.cs" />
+    <Compile Include="clsHDTrialUploadChassis.cs" />
+    <Compile Include="clsHOBranch.cs" />
+    <Compile Include="clsIndent.cs" />
+    <Compile Include="clsInstallationCer.cs" />
+    <Compile Include="clsJobcard.cs" />
+    <Compile Include="clsLading.cs" />
+    <Compile Include="clsLC.cs" />
+    <Compile Include="ClsMail.cs" />
+    <Compile Include="clsMaterialReceipt.cs" />
+    <Compile Include="clsMenu.cs" />
+    <Compile Include="clsModeofshipment.cs" />
+    <Compile Include="clsMRN.cs" />
+    <Compile Include="clsORF.cs" />
+    <Compile Include="clsPackingList.cs" />
+    <Compile Include="clsPageUnderMaintainance.cs" />
+    <Compile Include="clsParameter.cs" />
+    <Compile Include="clsPart.cs" />
+    <Compile Include="clsPartClaim.cs" />
+    <Compile Include="clsPartGroup.cs" />
+    <Compile Include="clsPartsProforma.cs" />
+    <Compile Include="clsPartsRFP.cs" />
+    <Compile Include="clsPDIDealerCode.cs" />
+    <Compile Include="clsPickList.cs" />
+    <Compile Include="clsPlantExportDetails.cs" />
+    <Compile Include="clsPO.cs" />
+    <Compile Include="clsPostShipment.cs" />
+    <Compile Include="clsPreshipment.cs" />
+    <Compile Include="clsProforma.cs" />
+    <Compile Include="clsReportNew.cs" />
+    <Compile Include="clsRFP.cs" />
+    <Compile Include="clsRFQ.cs" />
+    <Compile Include="clsSaveMaster.cs" />
+    <Compile Include="clsScheme.cs" />
+    <Compile Include="clsServiceIndex.cs" />
+    <Compile Include="clsSparePO.cs" />
+    <Compile Include="clsSparePurRetNote.cs" />
+    <Compile Include="clsSpareSalesRetNote.cs" />
+    <Compile Include="clsSpareSchemePart.cs" />
+    <Compile Include="clsSpareSchemeValue.cs" />
+    <Compile Include="clsSparesInvoice.cs" />
+    <Compile Include="clsSparesOA.cs" />
+    <Compile Include="clsSparesPO.cs" />
+    <Compile Include="clsSparesTarget.cs" />
+    <Compile Include="clsSpareStockAdj.cs" />
+    <Compile Include="clsStkTransferChallan.cs" />
+    <Compile Include="clsStkTransferReceipt.cs" />
+    <Compile Include="clsStockingNorms.cs" />
+    <Compile Include="clsSupplier.cs" />
+    <Compile Include="ClsTally.cs" />
+    <Compile Include="clsTax.cs" />
+    <Compile Include="clsUser.cs" />
+    <Compile Include="clsVehicle.cs" />
+    <Compile Include="clsVehicleIn.cs" />
+    <Compile Include="clsVehicleInvoice.cs" />
+    <Compile Include="clsVehicleReportingTime.cs" />
+    <Compile Include="clsVehicleTarget.cs" />
+    <Compile Include="clsVRNApproval.cs" />
+    <Compile Include="clsWarranty.cs" />
+    <Compile Include="clsWarrantyLeaveMgmt.cs" />
+    <Compile Include="CustomReportCredentials.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MANART_DAL\MANART_DAL.csproj">
+      <Project>{ae8f7d68-857a-45a3-b573-e4472d72eba9}</Project>
+      <Name>MANART_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

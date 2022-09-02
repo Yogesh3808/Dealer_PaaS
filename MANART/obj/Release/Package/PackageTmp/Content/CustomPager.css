@@ -1,0 +1,154 @@
+﻿.PagerContainerTable
+{
+
+	color: #d1d1e1;
+	
+	background-color: #FFFFFF;
+}
+.PagerInfoCell
+{
+	padding-right: 6px;
+	padding-left: 6px;
+	padding-bottom: 10px;
+	font: bold 11px verdana, arial, geneva, lucida, 'lucida grande' , arial, helvetica, sans-serif;
+	color: #f0f1f2;
+	padding-top: 10px;
+	white-space: nowrap;
+	background-color: #990000;
+	font-weight:normal;
+	border-right:2px;
+	
+}
+.PagerInfoCell:link
+{
+	color: #ffcc66;
+	text-decoration: none;
+	padding-left: 6px;
+	
+}
+.PagerInfoCell:visited
+{
+	color: #ffcc66;
+	text-decoration: none;
+	padding-left: 6px;
+}
+.PagerCurrentPageCell
+{
+	color: #000000;
+	background: url(../Images/Grid_columns_BG_Blue.jpg) repeat-x;
+	padding-top :2px;
+	padding-bottom :2px;
+	padding-left :4px;
+	padding-right :3px;
+	
+	
+}
+.PagerOtherPageCells
+{
+	
+	padding-top :2px;
+	padding-bottom :2px;
+	padding-left :3px;
+	padding-right :4px;
+	border-left: solid 1px;
+	
+}
+.PagerSSCCells
+{
+	padding-top :2px;
+	padding-bottom :2px;
+	padding-left :3px;
+	padding-right :4px;
+	border-left: solid 1px;
+	
+}
+.PagerHyperlinkStyle
+{
+	font: 9px verdana, arial, geneva, lucida, 'lucida grande' , arial, helvetica, sans-serif;
+	padding-top :2px;
+	padding-left :3px;
+	padding-right :4px;	
+	
+}
+.PagerHyperlinkStyle:hover
+{
+	color: #000000;
+	text-decoration: none;
+	font: 9px verdana, arial, geneva, lucida, 'lucida grande' , arial, helvetica, sans-serif;
+	padding-top :2px;
+	padding-bottom :2px;
+	padding-left :3px;
+	padding-right :4px;	
+	
+}
+.PagerHyperlinkStyle:link
+{
+	
+	text-decoration: none;
+	font: 9px verdana, arial, geneva, lucida, 'lucida grande' , arial, helvetica, sans-serif;	
+	padding-top :2px;
+	padding-bottom :2px;
+	padding-left :3px;
+	padding-right :4px;
+	
+	
+}
+.PagerHyperlinkStyle:visited
+{
+	color: #000000;
+	text-decoration: none;
+	font: 9px verdana, arial, geneva, lucida, 'lucida grande' , arial, helvetica, sans-serif;
+	padding-top :2px;
+	padding-bottom :2px;
+	padding-left :3px;
+	padding-right :4px;
+	
+}
+.PagerHyperlinkStyle:active
+{
+	color: Yellow;
+	text-decoration: none;
+	font: 9px verdana, arial, geneva, lucida, 'lucida grande' , arial, helvetica, sans-serif;
+	padding-top :2px;
+	padding-bottom :2px;
+	padding-left :3px;
+	padding-right :4px;
+	
+}
+.GoToLabel
+{
+	font: 9px verdana, arial, geneva, lucida, 'lucida grande' , arial, helvetica, sans-serif;
+	color:#333333;
+	cursor:pointer;
+	font-size:100%;
+	vertical-align:middle;
+	display:inline;
+
+}
+.GoToSelect
+{
+	font-size:100%;	
+	
+}
+.GoToSelectedOption
+{
+	color:Yellow;
+	background-color:#666666;
+	font-size:100%;
+	width :100%;
+}
+
+.GoToArrow
+{
+	vertical-align:middle;
+	cursor:pointer;
+}
+.PagerTableTD
+{
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: url(../Images/Grid_columns_BG_Blue.jpg) repeat-x;
+    
+}

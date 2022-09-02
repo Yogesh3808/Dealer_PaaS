@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Neodynamic.SDK.WebClientPrint</id>
+    <version>3.0.2016.0</version>
+    <title>WebClientPrint for ASP.NET WebForms &amp; MVC</title>
+    <authors>Neodynamic</authors>
+    <owners>Neodynamic</owners>
+    <licenseUrl>http://www.neodynamic.com/eula</licenseUrl>
+    <projectUrl>http://www.neodynamic.com/products/printing/raw-data/aspnet-mvc/</projectUrl>
+    <iconUrl>http://www.neodynamic.com/images/webclientprinticon.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>WebClientPrint for ASP.NET is a plugin-free solution for Client-side Raw Printing scenarios for Windows, Linux, Raspberry Pi &amp; Mac clients, exclusively designed for ASP.NET Web Forms and MVC. With WebClientPrint, you can easily send raw data, text and native commands to printers installed at the client machine without showing or displaying any print dialog box! You can also print common file formats like PDF, TXT, DOC, XLS, JPG, PNG, TIFF (Multipage), and so on! WebClientPrint does support any kind of type and brand printers! Thermal Label Barcode printers, POS receipt printers, RFID printers, Dot-Matrix printers, Kiosk printers, ID Card printers, Laser, Inkjet and more...
+Printers Connectivity support includes: installed Windows printers (for USB connection), Shared Printers on the client machine network with a UNC name/path, printers connected to Parallel Port (e.g. LPT1) Centronics or Serial Port RS-232 (e.g. COM1) as well as IP/Ethernet Network printers.
+Send any Printer Command Language! Most known like ESC/P, PCL, PostScript, PRN, ZPL, EPL, IPL, DPL, EZPL, ZGL, SBPL, RCL WPL, CLP, IBM Proprinter, CPL, Dymo ESC codes, SPL, TCPL, TSPL-EZ, DASCOM, and more. USPS, FedEx, UPS, DHL shipping labels formats too.</description>
+    <summary>Client Raw Data Printing for ASP.NET Web Forms and MVC. Cross browser and Plugin-free. Print without dialog box. Use with thermal, impact, dot-matrix, RFID, kiosk, POS, receipt, wristband printers.</summary>
+    <releaseNotes>## IMPORTANT NOTE 
+
+#1. Due to some new features and improvements, this brand new server side component is NOT backward compatible! 
+
+#2. The WebClientPrint Processor (WCPP) client utility does no longer support Windows 98, Windows 2000 nor Windows ME
+
+#New! Added support for printing to Default printer if the specified installed printer is not found or missing at printing time. See PrintToDefaultIfNotFound property of InstalledPrinter class.
+
+#New! PrintFile now allows you to specify files from HTTP sources
+
+#New! Full control for storing client related info (like list of installed printers) anywhere at the server side, from memory/disk based cache to DB or file servers
+
+#New! Added support for Number of Copies when printing Raw Commands as well as Known File Formats
+
+#New! File name commands for specifying the X,Y position as well as Print orientation when printing PNG or JPG images
+
+#New! Added support for printing a group of ClientPrintJob objects through the brand new ClientPrintJobGroup class. Now you can combine and print raw commands along with known file formats. Print them to the same printer or to different printers with just one click! Endless printing possibilities.
+
+#New! Added support for client printing from Raspberry Pi / Raspbian</releaseNotes>
+    <copyright>Copyright (c) 2016 - Neodynamic</copyright>
+    <tags>Raw Data Print Commands ASP.NET WebForms MVC Razor Thermal Label POS receipt RFID Dot-Matrix Kiosk ID Card Laser Inkjet USB UNC LPT RS-232 IP Ethernet Network ESC/P PCL PostScript PRN ZPL EPL IPL DPL EZPL ZGL SBPL RCL WPL CLP IBM Proprinter CPL Dymo ESC codes SPL TCPL TSPL-EZ DASCOM USPS FedEx UPS DHL shipping labels PDF TXT DOC XLS JPG PNG TIFF Linux Mac Raspberry Pi</tags>
+  </metadata>
+</package>

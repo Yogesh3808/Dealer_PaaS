@@ -1,0 +1,309 @@
+﻿    .modalBackground
+    {
+        background-color: Black;
+        filter: alpha(opacity=60);
+        opacity: 0.6;
+    }
+    .modalPopup
+    {
+        background-color: #FFFFFF;
+        width: 900px;
+        border: 12px solid #0DA9D0;
+        border-radius: 12px;
+        padding:0
+      
+    }
+    .modalPopup .header
+    {
+        background-color: #2FBDF1;
+        height: 30px;
+        color: White;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .modalPopup .body
+    {
+        min-height: 50px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .modalPopup .footer
+    {
+        padding: 6px;
+    }
+    .modalPopup .yes, .modalPopup .no
+    {
+        height: 23px;
+        color: White;
+        line-height: 23px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .modalPopup .yes
+    {
+        background-color: #2FBDF1;
+        border: 1px solid #0DA9D0;
+    }
+    .modalPopup .no
+    {
+        background-color: #9F9F9F;
+        border: 1px solid #5C5C5C;
+    }
+    /*CSS Class For FrmEstimate Select Chassis*/
+    .modalPopup_SelectChassis
+    {
+        background-color: #FFFFFF;
+        width: 1000px;
+        height:500px;
+        border: 12px solid #0DA9D0;
+        border-radius: 12px;
+        padding:0
+      
+    }
+    .modalPopup_SelectChassis .header
+    {
+        background-color: #2FBDF1;
+        height: 30px;
+        color: White;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .modalPopup_SelectChassis .body
+    {
+        min-height: 50px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .modalPopup_SelectChassis .footer
+    {
+        padding: 6px;
+    }
+/*End CSS Class For FrmEstimate Select Chassis */
+
+  /*CSS Class For FrmEstimate Select Part*/
+   .modalPopup_SelectPart
+    {
+        background-color: #FFFFFF;
+        width: 1000px;
+        height:550px;
+        border: 12px solid #0DA9D0;
+        border-radius: 12px;
+        padding:0
+      
+    }
+    .modalPopup_SelectPart .header
+    {
+        background-color: #2FBDF1;
+        height: 30px;
+        color: White;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .modalPopup_SelectPart .body
+    {
+        min-height: 50px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .modalPopup_SelectPart .footer
+    {
+        padding: 6px;
+    }
+  /*End CSS Class For FrmEstimate Select Part */
+
+  /*CSS Class For FrmEstimate Select Labour*/
+   .modalPopup_SelectLabour
+    {
+        background-color: #FFFFFF;
+        width: 1000px;
+        height:590px;
+        border: 12px solid #0DA9D0;
+        border-radius: 12px;
+        padding:0
+      
+    }
+    .modalPopup_SelectLabour .header
+    {
+        background-color: #2FBDF1;
+        height: 30px;
+        color: White;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .modalPopup_SelectLabour .body
+    {
+        min-height: 50px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .modalPopup_SelectLabour .footer
+    {
+        padding: 6px;
+    }
+  /*End CSS Class For FrmEstimate Select Part */
+    /*CSS Class For modalPopup_Receipt Select Labour*/
+   .modalPopup_Receipt
+    {
+        background-color: #FFFFFF;
+        width: 1000px;
+        height:590px;
+        border: 12px solid #0DA9D0;
+        border-radius: 12px;
+        padding:0
+      
+    }
+    .modalPopup_Receipt .header
+    {
+        background-color: #2FBDF1;
+        height: 30px;
+        color: White;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .modalPopup_Receipt .body
+    {
+        min-height: 50px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .modalPopup_Receipt .footer
+    {
+        padding: 6px;
+    }
+  /*End CSS Class For modalPopup_Receipt Select Part */
+
+     /*CSS Class For modalPopup_Receipt Select Labour*/
+  .modalPopup_ModelCatelogue
+    {
+        background-color: #FFFFFF;
+        width: 700px;
+        border: 12px solid #0DA9D0;
+        border-radius: 12px;
+        padding:0
+      
+    }
+    .modalPopup_ModelCatelogue .header
+    {
+        background-color: #2FBDF1;
+        height: 30px;
+        color: White;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .modalPopup_ModelCatelogue .body
+    {
+        min-height: 50px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .modalPopup_ModelCatelogue .footer
+    {
+        padding: 6px;
+    }
+    .modalPopup_ModelCatelogue .yes, .modalPopup .no
+    {
+        height: 23px;
+        color: White;
+        line-height: 23px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .modalPopup_ModelCatelogue .yes
+    {
+        background-color: #2FBDF1;
+        border: 1px solid #0DA9D0;
+    }
+    .modalPopup_ModelCatelogue .no
+    {
+        background-color: #9F9F9F;
+        border: 1px solid #5C5C5C;
+    }
+  /*End CSS Class For modalPopup_ModelCatelogue Select Part */
+/*Css Class for ModelPupup_RFP Select Part*/
+ .modalBackground_RFP
+    {
+        background-color: Black;
+        filter: alpha(opacity=60);
+        opacity: 0.6;
+    }
+    .modalPopup_RFP
+    {
+        background-color: #FFFFFF;
+        width: 900px;
+        border: 12px solid #0DA9D0;
+        border-radius: 12px;
+        padding:0
+      
+    }
+    .modalPopup_RFP .header
+    {
+        background-color: #2FBDF1;
+        height: 30px;
+        color: White;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .modalPopup_RFP .body
+    {
+        min-height: 50px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .modalPopup_RFP .footer
+    {
+        padding: 6px;
+    }
+    .modalPopup_RFP .yes, .modalPopup_RFP .no
+    {
+        height: 23px;
+        color: White;
+        line-height: 23px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .modalPopup_RFP .yes
+    {
+        background-color: #2FBDF1;
+        border: 1px solid #0DA9D0;
+    }
+    .modalPopup_RFP .no
+    {
+        background-color: #9F9F9F;
+        border: 1px solid #5C5C5C;
+    }
+
+/*End CSS Class For ModelPupup_RFP Select Part*/

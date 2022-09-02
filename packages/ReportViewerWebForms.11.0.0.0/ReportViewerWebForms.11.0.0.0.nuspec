@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ReportViewerWebForms</id>
+    <version>11.0.0.0</version>
+    <title>ReportViewerWebForms</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <projectUrl>http://www.msdn.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Reportviewer for webforms</description>
+    <summary />
+    <dependencies>
+      <dependency id="ReportViewerCommon" version="11.0.0.0" />
+    </dependencies>
+  </metadata>
+</package>

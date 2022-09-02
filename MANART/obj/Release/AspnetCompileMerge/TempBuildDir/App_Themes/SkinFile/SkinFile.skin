@@ -1,0 +1,44 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:GridView runat="server" SkinId="NormalGrid" CssClass="datatable"  BackColor="White" AlternatingRowStyle-CssClass="odd" RowStyle-CssClass="even"
+BorderColor="#336666"  BorderWidth="1px" AllowPaging="False" GridLines="None" Style="border-collapse: separate;" >        
+<FooterStyle CssClass="GridViewFooterStyle" />
+<RowStyle CssClass="GridViewRowStyle" />    
+<SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+<PagerStyle CssClass="GridViewPagerStyle" />
+<AlternatingRowStyle CssClass="GridViewAlternatingRowStyle" />
+<HeaderStyle CssClass="GridViewHeaderStyle" />
+</asp:GridView>
+
+<asp:GridView runat="server" SkinId="PlaneGrid" CssClass="datatable"  BackColor="White" AlternatingRowStyle-CssClass="odd" RowStyle-CssClass="even"
+BorderColor="#336666"  BorderWidth="2px" AllowPaging="False" GridLines="Both" Style="border-collapse: separate;" >        
+<FooterStyle CssClass="GridViewFooterStyle" />
+<RowStyle CssClass="GridViewRowStyle" />    
+<SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+<PagerStyle CssClass="GridViewPagerStyle" />
+<AlternatingRowStyle CssClass="GridViewAlternatingRowStyle" />
+<HeaderStyle CssClass="GridViewHeaderMyStyle" />
+</asp:GridView>
+
+<asp:GridView runat="server" SkinId="PatcGrid" CssClass="datatable"  BackColor="White" AlternatingRowStyle-CssClass="odd" RowStyle-CssClass="even"
+BorderColor="#336666"  BorderWidth="1px" AllowPaging="False" GridLines="None" Style="border-collapse: separate;" >        
+<FooterStyle CssClass="GridViewFooterStyle" />
+<RowStyle CssClass="GridViewRowStyle" />    
+<SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+<PagerStyle CssClass="GridViewPagerStyle" />
+<AlternatingRowStyle CssClass="GridViewAlternatingRowStyle" />
+<HeaderStyle CssClass="GridViewHeaderStylePatch" />
+</asp:GridView>
